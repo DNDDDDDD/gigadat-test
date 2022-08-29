@@ -7,8 +7,7 @@ const rowStyles = {
   whiteSpace: 'nowrap'
 };
 
-export const TableRow = ({
-                           brand = '',
+export const TableRow = ({ brand = '',
                            category = '',
                            description = '',
                            title = '',
