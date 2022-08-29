@@ -7,14 +7,17 @@ const rowStyles = {
   whiteSpace: 'nowrap'
 };
 
-export const TableRow = ({ brand = '',
-                           category = '',
-                           description = '',
-                           title = '',
-                           price = '',
-                           rating = ''
-                         }) =>
-  (<Tr>
+export const TableRow = (props) => {
+  const {
+    brand = '',
+    category = '',
+    description = '',
+    title = '',
+    price = '',
+    rating = ''
+  } = props;
+
+  return (<Tr>
     <Th>{title}</Th>
     <Td>
       <Box sx={rowStyles}>{description}</Box>
@@ -23,3 +26,4 @@ export const TableRow = ({ brand = '',
     <Td>{rating}</Td><Td>{brand}</Td>
     <Td>{category}</Td>
   </Tr>);
+}

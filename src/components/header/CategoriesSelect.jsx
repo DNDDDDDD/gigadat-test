@@ -16,12 +16,10 @@ export const CategoriesSelect = ({ setProducts }) => {
     const categoryName = event.target.value;
     if (categoryName !== RESET) {
       WebApi.getCategoryProducts(categoryName).then((data) => {
-        console.log(data);
         setProducts(data);
       });
     } else {
       WebApi.getProducts().then(data => {
-        console.log(data);
         setProducts(data);
       });
     }
