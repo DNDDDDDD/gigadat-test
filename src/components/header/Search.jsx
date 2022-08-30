@@ -3,11 +3,10 @@ import WebApi from '../../api/web-api';
 
 export const Search = ({ setProducts }) => {
   const handleChange = (event) => {
-    WebApi.getSearchProducts(event.target.value)
-      .then((data) => {
-        setProducts(data);
-      });
+    WebApi.getSearchProducts(event.target.value).then((data) => {
+      setProducts(data);
+    });
   };
 
-  return <Input placeholder='Search for...' onChange={handleChange} />;
+  return <Input placeholder="Search for..." onChange={handleChange} />;
 };

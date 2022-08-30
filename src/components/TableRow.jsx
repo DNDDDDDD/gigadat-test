@@ -17,13 +17,16 @@ export const TableRow = (props) => {
     rating = ''
   } = props;
 
-  return (<Tr>
-    <Th>{title}</Th>
-    <Td>
-      <Box sx={rowStyles}>{description}</Box>
-    </Td>
-    <Td>{price}</Td>
-    <Td>{rating}</Td><Td>{brand}</Td>
-    <Td>{category}</Td>
-  </Tr>);
-}
+  return (
+    <Tr>
+      <Th>{title}</Th>
+      <Td>
+        <Box sx={rowStyles}>{description}</Box>
+      </Td>
+      <Td>{price}</Td>
+      <Td>{rating}</Td>
+      <Td>{brand}</Td>
+      <Td>{category}</Td>
+    </Tr>
+  );
+};

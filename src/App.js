@@ -1,6 +1,6 @@
 import './App.css';
 import WebApi from './api/web-api';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ProductsTable } from './components/Table';
 import { getHeaders } from './helpers/getHeaders';
 import './App.css';
